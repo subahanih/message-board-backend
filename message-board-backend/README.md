@@ -7,8 +7,10 @@ Models are clearly seperated and created utils for field validations, error hand
 
 This application comprises of two phases.
     1. message-board-backend
-    Back-end has been developed using ExpressJs(cors, dotenv, express, express-validator, mysql2)
+    Back-end has been developed using ExpressJs(cors, dotenv, express, express-validator, mysql2 & node-cache)
     Backend exposes the below services to frontend inorder to fetch channels, messages related to channel, create messages and fetch the user.
+	Seperate middleware ahs been created for cacheing.
+	
         i. http://localhost:3001/api/v1/message/channelId/1
         ii. http://localhost:3001/api/v1/message/channel
         iii. http://localhost:3001/api/v1/message/create
