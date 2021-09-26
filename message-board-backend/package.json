@@ -1,0 +1,24 @@
+{
+  "name": "message-board-backend",
+  "version": "1.0.0",
+  "description": "Message Board Back-End",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon"
+  },
+  "author": "Mahaboob Subahan",
+  "license": "ISC",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-validator": "^6.12.1",
+    "mysql2": "^2.3.0",
+    "node-cache": "^5.1.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
