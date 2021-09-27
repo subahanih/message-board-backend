@@ -3,12 +3,14 @@ Message Board Application
 
 This application is developed for providing services to message-board-frontend application.
 This API is developed using ExpressJs & MySql. For make ease of development I have used nodemon.
-Models are clearly seperated and created utils for field validations, error handling, modyfying exception, and to handle await errors.
+Models are clearly seperated and created utils for field validations, error handling, 
+modyfying exception, and to handle await errors.
 
 This application comprises of two phases.
     1. message-board-backend
     Back-end has been developed using ExpressJs(cors, dotenv, express, express-validator, mysql2)
-    Backend exposes the below services to frontend inorder to fetch channels, messages related to channel, create messages and fetch the user.
+    Backend exposes the below services to frontend inorder to fetch channels, messages related to channel, 
+	create messages and fetch the user.
         i. http://localhost:3001/api/v1/message/channelId/1
         ii. http://localhost:3001/api/v1/message/channel
         iii. http://localhost:3001/api/v1/message/create
@@ -24,10 +26,13 @@ This application comprises of two phases.
 
 ### What is missing?
     ● Channel and message storage can be an in-memory database (global variable etc).
-    I was facing difficulties to connect in memory database. Almost done but it was consuming most of the timings so I have dropped off. Finally I have used MySQL.
+    I was facing difficulties to connect in memory database. Almost done but it was consuming most of the timings so I have dropped off. 
+	Finally I have used MySQL.
 
     ● On server start, storage is populated with a fixed set of empty channels
-    Since I was not able to configure in memory database I couldn't load mock data automatically, instead, I have given MySql script "arc/database/create-message-db.sql". Tis would contain the required table and few mock-data as mentioned in the specification.
+    Since I was not able to configure in memory database I couldn't load mock data automatically, 
+	instead, I have given MySql script "arc/database/create-message-db.sql". 
+	Tis would contain the required table and few mock-data as mentioned in the specification.
 
 ### What is completed? 
     ● GET endpoint for querying channels
